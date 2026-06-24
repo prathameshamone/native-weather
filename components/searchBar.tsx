@@ -12,7 +12,7 @@ interface Props {
 export default function SearchBar({ onSearch }: Props) {
     const { darkMode } = useTheme();
     const colors = {
-        card: darkMode ? "#373C40" : "#F5F5F5",
+        card: darkMode ? "#373C40" : "white",
         text: darkMode ? "#EAE0CF" : "#000000",
         button: darkMode ? "#202224" : "#ffffff"
     };
@@ -70,15 +70,15 @@ export default function SearchBar({ onSearch }: Props) {
 }
 
 const styles = StyleSheet.create({
-    text:{
-        fontWeight:"700",
+    text: {
+        fontFamily: "Poppins_700Bold",
     },
     heading: {
         bottom: 10,
     },
     city: {
         color: "#EAE0CF",
-        fontWeight: "700"
+        fontFamily: "Poppins_700Bold"
     },
     input: {
         backgroundColor: "white",
@@ -86,7 +86,8 @@ const styles = StyleSheet.create({
         height: 50,
         bottom: 8,
         paddingLeft: 20,
-        boxShadow: '0px 0px 100px 0px rgba(0, 0, 0, 0.12)'
+        elevation: 4,
+        // boxShadow: '0px 0px 100px 0px rgba(0, 0, 0, 0.12)'
 
     },
     searchbar: {
@@ -102,7 +103,8 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         borderRadius: 12,
         padding: 10,
-        boxShadow: '0px 0px 100px 0px rgba(0, 0, 0, 0.12)'
+        elevation: 4,
+        // boxShadow: '0px 0px 100px 0px rgba(0, 0, 0, 0.12)'
 
     },
     card: {
@@ -110,7 +112,7 @@ const styles = StyleSheet.create({
         padding: 20,
         height: 180,
         borderRadius: 12,
-        elevation: 10,
+        elevation: 5,
         width: "110%",
         right: 20
 

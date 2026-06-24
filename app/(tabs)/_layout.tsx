@@ -1,24 +1,31 @@
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { useTheme } from "../../contexts/ThemeContext"
 
 export default function TabLayout() {
+    const { darkMode } = useTheme();
     return (
         <Tabs
             screenOptions={{
                 headerShown: false,
 
                 sceneStyle: {
-                    backgroundColor: "black",
+                    backgroundColor: darkMode ? "black" : "white",
+                    borderTopWidth: 5,
+                    height: 70,
                 },
 
                 tabBarStyle: {
-                    backgroundColor: "black", // same dark blue
+                    backgroundColor: darkMode ? "black" : "white",
                     borderTopWidth: 0,
                     height: 70,
                 },
 
-                tabBarActiveTintColor: "#E8E1D4", // your cream color
-                tabBarInactiveTintColor: "#8A8FA3",
+                tabBarActiveTintColor: darkMode ? "#EAE0CF" : "#373C40",
+                tabBarInactiveTintColor: darkMode
+                    ? "#8A8FA3"
+                    : "#A0A0A0",
+                // tabBarInactiveTintColor: "#8A8FA3",
             }}
         >
             <Tabs.Screen

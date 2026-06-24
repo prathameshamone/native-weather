@@ -56,20 +56,21 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 16,
-    boxShadow: '0px 0px 100px 0px rgba(0, 0, 0, 0.12)'
+    // boxShadow: '0px 0px 100px 0px rgba(0, 0, 0, 0.12)'
+    elevation: 5,
 
   },
   city: {
     color: "#EAE0CF",
     fontSize: 24,
-    fontWeight: "700",
+    fontFamily: "Poppins_700Bold",
     textAlign: "center",
   },
 
   temp: {
     color: "#EAE0CF",
     fontSize: 60,
-    fontWeight: "bold",
+    fontFamily: "Poppins_700Bold",
     textAlign: "center",
     marginVertical: 10,
   },
@@ -80,11 +81,13 @@ const styles = StyleSheet.create({
     fontSize: 18,
     // color: "#64748B",
     marginBottom: 20,
+    fontFamily: "Poppins_700Bold"
   },
 
   info: {
     color: "#EAE0CF",
     fontSize: 16,
     marginVertical: 2,
+    fontFamily: "Poppins_700Bold",
   },
 })

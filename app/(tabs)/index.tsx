@@ -34,7 +34,7 @@ export default function Home() {
                         {
                             color: colors.text,
                         },
-                    ]}>Weather App</Text>
+                    ]}>WeatherWell</Text>
                 </View>
                 <View style={styles.container}>
                     <View style={[styles.searchbarcss, {
@@ -47,7 +47,7 @@ export default function Home() {
                             style={[styles.clearButton, { backgroundColor: colors.button }]}
                             onPress={clearWeather}
                         >
-                            <Text style={[styles.clearText, {color:colors.text}]}>
+                            <Text style={[styles.clearText, { color: colors.text }]}>
                                 Clear Results
                             </Text>
                         </TouchableOpacity>
@@ -76,19 +76,19 @@ const styles = StyleSheet.create({
         padding: 10,
         justifyContent: "center",
         // elevation:10,
-        boxShadow: '0px 0px 100px 0px rgba(0, 0, 0, 0.12)'
+        // boxShadow: '0px 0px 100px 0px rgba(0, 0, 0, 0.12)'
     },
     homecontainer: {
         backgroundColor: "#1e2022",
         justifyContent: "center",
         padding: 20,
-        elevation: 20
+        elevation: 5
 
     },
     container: {
         flex: 1,
         padding: 20,
-        paddingTop: 30,
+        paddingTop: 20,
         // backgroundColor: "black",
         justifyContent: "flex-start",
         alignItems: "center",
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 25,
-        fontWeight: "bold",
+        fontFamily: "Poppins_700Bold",
         color: "#EAE0CF",
     },
     error: {
@@ -113,12 +113,12 @@ const styles = StyleSheet.create({
         width: "50%",
         justifyContent: "center",
         alignItems: "center",
-        elevation:4,
-        boxShadow: '0px 0px 100px 0px rgba(0, 0, 0, 0.18)',
+        elevation: 4,
+        // boxShadow: '0px 0px 100px 0px rgba(0, 0, 0, 0.18)',
     },
 
     clearText: {
         color: "#FFF",
-        fontWeight: "600",
+        fontFamily: "Poppins_700Bold"
     },
 });
